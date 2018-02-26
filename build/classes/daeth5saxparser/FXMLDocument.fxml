@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daeth5saxparser.FXMLDocumentController">
+   <children>
+      <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Options">
+        <items>
+          <MenuItem fx:id="uploadButton" mnemonicParsing="false" onAction="#handleUploadAction" onMenuValidation="#handleUploadAction" text="Upload XML" />
+          <MenuItem fx:id="clearButton" mnemonicParsing="false" onAction="#handleClearAction" onMenuValidation="#handleClearAction" text="Clear" />
+            <MenuItem fx:id="exitButton" mnemonicParsing="false" onAction="#handleExitAction" text="Exit" />
+        </items>
+      </MenuButton>
+      <TextArea fx:id="textarea" layoutX="34.0" layoutY="52.0" prefHeight="284.0" prefWidth="378.0" />
+   </children>
+</AnchorPane>
